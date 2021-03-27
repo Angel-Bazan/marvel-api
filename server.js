@@ -57,7 +57,7 @@ app.get('/api/avengers/:avengerName', (request, response) => {
    }
 })
 
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log(`Server running on port ${PORT}`)
 }) //this method takes in two things a PORT and a CALLBACK
 
